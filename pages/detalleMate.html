@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Brygada+1918:ital@1&display=swap" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Rolling Mate</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navcolor">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html"> <img src="../img/Logo_rollingmate_sin_patas_blanco_26-9-23-01.png" alt="logo" class="logo"></a>
+          
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/error404.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Boton carrito-navbar -->
+          <a data-bs-toggle="modal" data-bs-target="#carrito"> <i class="bi bi-cart logocarrito"></i> </a>
+          
+        </div> 
+      </nav>
+    </header>
+    <main>
+      <!-- DETALLE DE PRODUCTO -->
+      <section class="productos">    
+          <article class="container pb-5">
+              <h2 class="mt-4 mb-4  tituloProd text-start">MATE IMPERIAL PREMIUM</h2>
+              
+              <!-- Carrousel -->
+
+              <div class="container row" >                        
+                <div id="carouselExampleIndicators" class="carousel slide col-md-6">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                      <img src="../img/mate1.jpeg" class="d-block w-100 mate1" alt="mate">
+                      </div>
+                      <div class="carousel-item">
+                      <img src="../img/mate2.jpeg" class="d-block w-100 mate1" alt="mate">
+                      </div>
+                      <div class="carousel-item">
+                      <img src="../img/mate3.jpeg" class="d-block w-100 mate1" alt="mate">
+                      </div>
+                      <div class="carousel-item">
+                      <img src="../img/mate4.jpeg" class="d-block w-100 mate1" alt="mate">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon " aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                    
+                    
+                <div class="col-md-6">
+                  <p>
+                    <h6> DETALLES </h6>
+                    Por su delicado trabajo artesanal, el mate imperial se convirtió
+                    en el anhelo de todo matero argentino.
+                    <br/>
+                    Cada pieza es única, de trabajo artesano meticuloso,
+                    distinguiéndose cada mate imperial del resto.
+                    <br/>
+                    Si desea completar la experiencia, tiene la opción de incluir una
+                    bombilla pico loro, una compañera perfecta para su mate. <br />
+                    Si desea presentar su mate de manera especial, ofrecemos la opción
+                    de una caja de regalo, que agrega un toque de lujo a su obsequio.
+                  </p>
+              
+                  <h6>CARACTERÍSTICAS:</h6> 
+                  <ul>
+                  <li>Mate de calabaza brasilera</li>
+                  <li>Forrado en cuero vacuno</li>
+                  <li>Base de 4 patas reforzadas.</li>
+                  </ul>
+                  <h5> Precio: $9.000 </h5> <br>
+                  <!-- Agregar producto al carrito -->
+                  <div class=>
+                    <button class="container agregarCarrito" data-bs-toggle="modal" data-bs-target="#carrito" > Agragar al carrito </button>
+                  </div>  
+                </div>
+                
+              </div>    
+          </article>
+      </section>    
+
+      <!-- Modal Carrito-->
+      <section>
+        <div class="modal fade col-sm-12" id="carrito" tabindex="-1" aria-labelledby="modalCarrito" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h2 class="modal-title fs-5 tituloCarrito" id="modalCarrito">TU CARRITO</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="container modal-body">
+                <!-- Carrito Mate -->
+                <div class="carrito-productos">
+                  <img src="../img/mate1.jpeg" alt="mate1" class="mb-1 carritoimg">
+                  <div class="ms-2 carrito-titulo-producto">MATE IMPERIAL PREMIUM </div>
+                  <div class="carrito-precio">$9.000 </div>
+                  <!-- borrar Carrito -->
+                  <i class="btn bi bi-trash-fill borrar-carrito"></i>
+                </div>    
+                <hr>
+                <!-- Carrito Bombilla  -->
+                <div class="carrito-productos">
+                  <img src="../img/bombilla1.jpg" alt="bombilla" class="mb-2 me-2 carritoimg">
+                  <div class="ms-1 carrito-titulo-producto"> BOMBILLA PICO DE LORO BI COLOR </div>
+                  <!-- precio -->
+                  <div class="carrito-precio">$5.000 </div>
+                  <!-- borrar Carrito -->
+                  <i class="btn bi bi-trash-fill borrar-carrito"></i>
+                </div>
+                <hr>     
+                <h5 class="text-end precioTotal"> Total: $14.000 </h5>
+                <hr>
+                <a class="btn container finalizarCompra" href="../pages/error404.html">  Finalizar Compra</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>  
+
+    </main>
+    <footer>
+      
+    </footer>
+
+    <!-- Enlace a Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

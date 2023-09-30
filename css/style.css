@@ -1,0 +1,106 @@
+* {
+    font-family: 'Brygada 1918', serif;
+}
+
+
+.navcolor {
+    background: #925438;
+    color: #F1F1F0;
+    
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #F1F1F0;
+}
+main{
+    flex-grow: 1;
+}
+
+
+
+
+/* Detalle productos */
+
+.logo {
+    height: 60px;
+    object-fit: contain;
+    margin-left: 20px;
+}
+h6,h5{
+    color: #925438;
+}
+
+.mate1 {
+    height: 500px;
+    object-fit: cover;
+}
+.bombilla {
+    height: 500px;
+    object-fit: contain;
+    color: aliceblue;
+}
+
+.agregarCarrito {
+    background-color: #925438;
+    color: #F1F1F0;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+
+
+/* Carrito */
+.logocarrito{
+    margin-right: 50px;
+    font-size: 20px;
+    color: #F1F1F0;
+}
+
+
+.tituloCarrito {
+    text-align: center;
+    margin-top: 20px;
+    color: #193350;
+}
+.carritoimg {
+    height: auto;
+    width: 100px;
+    object-fit: contain;
+
+    
+}
+.carrito-productos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.carrito-titulo-producto{
+    max-width: 250px ;
+}
+
+.carrito-precio {
+    color: #193350;
+    
+}
+
+.precioTotal{
+    color: #925438;
+}
+
+
+.finalizarCompra{
+    background-color: #925438;
+    color: #F1F1F0;
+    
+}
+
+
+
+
