@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Baldiviezo Cristian Ivan">
+    <meta name="description" content="Rolling Mate, venta de productos para tomar y disfrutar un buen mate">
+    <meta name="keywords" content="mates, bombillas, yerbas">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Brygada+1918:ital@1&display=swap" rel="stylesheet">
@@ -56,7 +59,7 @@
       </nav> 
     </header>
     <main>
-      <!-- Producto 2 bombillas  -->
+      <!-- Detalle producto bombillas  -->
       <section class="productos">        
         <article class="container  pt-4">
           <h2 class="mt-4 mb-4 tituloProd text-start"> BOMBILLA PICO DE LORO BI COLOR </h2>
@@ -97,26 +100,85 @@
 
             <div class="col-md-6">
               
-              <h6> DETALLES Y CARACTERISTICAS </h6> <br />
-                
+              <h6> DETALLES Y CARACTERISTICAS </h6> <br />                
               <ul>
-                <li>BOMBILLA PICO DE LORO DE ALPACA BRASILERA BI COLOR. <br></li>
-                <li>FABRICADA EN PLATEADO Y DORADO</li>
-                <li>NO SE TAPA.</li>
-                <li>EXCELENTE CALIDAD.</li>
-                <li>LA ALPACA BRASILERA ES ACERO NIQUELADO.</li>
-                <li>LA PARTE DORADA, ES BRONCE MACIZO DE EXCELENTE CALIDAD. NO ES ALPACA MACIZA.</li>
-                <li>PUEDE TENER O NO EL SELLO DE ALPACA O INOX PERO NO SIGNIFICA QUE SEA ALPACA MACIZA.</li>
+                <li>Bombilla pico de loro de alpaca brasilera bi color. <br></li>
+                <li>Fabricada en plateado y dorado</li>
+                <li>El pico de loro, aporta elegancia y comodidad al matear, permitiendo que el agua del mate ingrese de manera abundante al paladar.</li>
+                <li>Filtro de bombilla tipo pala, ideal para introducirla en el mate y remover la yerba mate cuando hay que renovar el sabor, o al terminar y limpiar el mate.</li>
+                <li>Además su amplio filtro es ideal para usar con yerba mate sin palo </li>               
+                <li>Excelente calidad.</li>
+                <li>La alpaca brasilera es acero niquelado.</li>
+                <li>La parte dorada, es bronce macizo de excelente calidad.</li>
+                <li>Puede tener o no el sello de alpaca o inox pero no significa que sea alpaca maciza.</li>
               </ul>
-
-              <h5> Precio: $5.000 </h5> <br>
+              <h5> Precio: $3.999 </h5> 
+              <br>
               <!-- Agregar producto al carrito -->
-              <div class=>
-                <button class="container agregarCarrito" data-bs-toggle="modal" data-bs-target="#carrito" > Agragar al carrito </button>
+              <div>
+                <button class="btn col-12 agregarCarrito mt-5 " data-bs-toggle="modal" data-bs-target="#carrito" > Agregar al carrito </button>
               </div>  
             </div>
           </div>     
         </article>    
+      </section>
+      <!-- Comentarios de Clientes -->
+      <section>
+        <div class="container">
+          <div class="row justify-content-around">
+            <div class="row comentarios justify-content-start col-md-6 align-content-center">
+              <form class="form-comentarios d-flex justify-content-end flex-wrap">
+                <textarea 
+                  name="Comentario" id="Comentario" 
+                  placeholder="Comentario"
+                  minlength="15"
+                  maxlength="250"
+                  >   
+                </textarea>
+                <button class="btn" type="button"> Comentar</button>
+              </form> 
+            </div>    
+            <div class="col-md-6 text-center">
+              <img src="../img/Logo_rollingmate_sin_patas_avion.png" class="avion w-100" alt="avion">
+            </div>
+          </div> 
+          <hr>
+          <div>
+            <!-- Comentario 1 -->
+            <div class="row">
+              <div class="col-1"> 
+                <img src="../img/usuario4.jpg" class="img-usuario img-fluid" alt="usuario4" >                  
+              </div>  
+              <div class="col-11">
+                <p class="nombre  p-3 "> Sandra Paez <span class="ps-2"> 2:15pm, Hoy</span></p>
+                <p class="comentario p-2"> "Las bombillas son de exelente calidad , las voverias comprar, recomiendo este producto."</p>
+              </div>
+            </div>  
+            <hr>
+            <!-- Comentario 2 -->
+            <div class="row">
+              <div class="col-1"> 
+                <img src="../img/usuario5.jpeg" class="img-usuario  img-fluid" alt="usuario5" >                  
+              </div>  
+              <div class="col-11">
+                <p class="nombre  p-3 "> Luis Dominguez <span class="ps-2"> 6:35pm, Ayer</span></p>
+                <p class="comentario p-2"> "Me quede sorprendido de la calidad de la alpaca, tambien cabe destacar la funcionalidad, es muy comodad a la hora de tomar mates, totalmente recomendado"</p>
+              </div>
+            </div> 
+            <hr>
+            <!-- Comentario 3 -->
+            <div class="row">
+              <div class="col-1"> 
+                <img src="../img/usuario6.jpeg" class="img-usuario img-fluid" alt="usuario6" >                  
+              </div>  
+              <div class="col-11">
+                <p class="nombre  p-3 "> Carlos Gomez <span class="ps-2"> 10:20am, Hace 2 años </span></p>
+                <p class="comentario p-2"> "Muy buena bombilla rey! ya me clave altos mattiolis en la zapla pero no la comparti por el covid que esta re heavy! abrazo."</p>
+              </div>
+            </div>  
+            <hr>    
+          </div>  
+        </div>
       </section>  
       <!-- Modal Carrito-->
       <section>
@@ -142,20 +204,19 @@
                   <img src="../img/bombilla1.jpg" alt="bombilla" class="mb-2 me-2 carritoimg">
                   <div class="ms-1 carrito-titulo-producto"> BOMBILLA PICO DE LORO BI COLOR </div>
                   <!-- precio -->
-                  <div class="carrito-precio">$5.000 </div>
+                  <div class="carrito-precio">$3.999 </div>
                   <!-- borrar Carrito -->
                   <i class="btn bi bi-trash-fill borrar-carrito"></i>
                 </div>
                 <hr>     
-                <h5 class="text-end precioTotal"> Total: $14.000 </h5>
+                <h5 class="text-end precioTotal"> Total: $12.999 </h5>
                 <hr>
                 <a class="btn container finalizarCompra" href="../pages/error404.html">  Finalizar Compra</a>
               </div>
             </div>
           </div>
         </div>
-      </section>  
-      
+      </section>       
     </main>
     <footer></footer>
 

@@ -2,7 +2,6 @@
     font-family: 'Brygada 1918', serif;
 }
 
-
 .navcolor {
     background: #925438;
     color: #F1F1F0;
@@ -19,9 +18,6 @@ main{
     flex-grow: 1;
 }
 
-
-
-
 /* Detalle productos */
 
 .logo {
@@ -34,7 +30,7 @@ h6,h5{
 }
 
 .mate1 {
-    height: 500px;
+    height: 520px;
     object-fit: cover;
 }
 .bombilla {
@@ -46,13 +42,7 @@ h6,h5{
 .agregarCarrito {
     background-color: #925438;
     color: #F1F1F0;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
 }
-
-
 
 /* Carrito */
 .logocarrito{
@@ -60,7 +50,6 @@ h6,h5{
     font-size: 20px;
     color: #F1F1F0;
 }
-
 
 .tituloCarrito {
     text-align: center;
@@ -70,37 +59,59 @@ h6,h5{
 .carritoimg {
     height: auto;
     width: 100px;
-    object-fit: contain;
-
-    
+    object-fit: contain;    
 }
 .carrito-productos{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
-    
+    align-items: center;    
 }
 .carrito-titulo-producto{
     max-width: 250px ;
 }
 
 .carrito-precio {
-    color: #193350;
-    
+    color: #193350;    
 }
 
 .precioTotal{
     color: #925438;
 }
 
-
 .finalizarCompra{
     background-color: #925438;
-    color: #F1F1F0;
-    
+    color: #F1F1F0; 
 }
 
+/* Comentarios de clientes */
 
+.comentarios {
+    margin: 30px 0;
+}
+.form-comentarios textarea{
+    width: 100%;
+    height: 150px;
+    max-width: 100%;
+    max-height: 300px;
+    padding: 10px;  
+    border: 1px solid #193350;    
+    margin-bottom: 10px;
+    resize: none;
+}
 
+.form-comentarios .btn{
+    background: #925438;
+    color: #F1F1F0;
+    max-height: 40px; 
+}
+.img-usuario {
+    max-width: 70px;
+    max-height: 50px;
+    object-fit: cover;
+}
+.avion{
+    max-width: 600px;
+    object-fit: cover;
+}
 

@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Baldiviezo Cristian Ivan">
+    <meta name="description" content="Rolling Mate, venta de productos para tomar y disfrutar un buen mate">
+    <meta name="keywords" content="mates, bombillas, yerbas">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Brygada+1918:ital@1&display=swap" rel="stylesheet">
@@ -56,7 +59,7 @@
       </nav>
     </header>
     <main>
-      <!-- DETALLE DE PRODUCTO -->
+      <!-- DETALLE DE PRODUCTO MATE -->
       <section class="productos">    
           <article class="container pb-5">
               <h2 class="mt-4 mb-4  tituloProd text-start">MATE IMPERIAL PREMIUM</h2>
@@ -93,8 +96,7 @@
                         <span class="carousel-control-next-icon " aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
-                </div>
-                    
+                </div>                  
                     
                 <div class="col-md-6">
                   <p>
@@ -117,17 +119,75 @@
                   <li>Forrado en cuero vacuno</li>
                   <li>Base de 4 patas reforzadas.</li>
                   </ul>
-                  <h5> Precio: $9.000 </h5> <br>
+                  <h5> Precio: $9.000 </h5> 
+                  <br>
                   <!-- Agregar producto al carrito -->
-                  <div class=>
-                    <button class="container agregarCarrito" data-bs-toggle="modal" data-bs-target="#carrito" > Agragar al carrito </button>
+                  <div>
+                    <button class="btn col-12 agregarCarrito mt-5" data-bs-toggle="modal" data-bs-target="#carrito" > Agregar al carrito </button>
                   </div>  
                 </div>
-                
               </div>    
           </article>
       </section>    
 
+      <!-- Comentarios de Clientes -->
+      <section>
+        <div class="container">
+          <div class="row justify-content-around">
+            <div class="row comentarios justify-content-start col-md-6 align-content-center">
+              <form class="form-comentarios d-flex justify-content-end flex-wrap">
+                <textarea 
+                  name="Comentario" id="Comentario" 
+                  placeholder="Comentario"
+                  minlength="15"
+                  maxlength="250"
+                  >   
+                </textarea>
+                <button class="btn" type="button"> Comentar</button>
+              </form> 
+            </div>    
+            <div class="col-md-6 text-center">
+              <img src="../img/Logo_rollingmate_sin_patas_avion.png" class="avion w-100" alt="avion">
+            </div>
+          </div> 
+          <hr>
+          <div>
+            <!-- Comentario 1 -->
+            <div class="row">
+              <div class="col-1"> 
+                <img src="../img/Usuario1.jpg" class="img-usuario img-fluid" alt="Usuario1" >                  
+              </div>  
+              <div class="col-11">
+                <p class="nombre  p-3 "> Eduardo Rodriguez <span class="ps-2"> 7:51pm, Hoy</span></p>
+                <p class="comentario p-2"> "Es buenísimo el mate. Es un mate grande y muy bien diseñado pero lo mejor es que el interior no es inmenso. Tiene la medida justa para no tener que ponerle 1kg de yerba como pasa con otros. Le doy un 10"</p>
+              </div>
+            </div>  
+            <hr>
+            <!-- Comentario 2 -->
+            <div class="row">
+              <div class="col-1"> 
+                <img src="../img/usuario2.jpg" class="img-usuario  img-fluid" alt="Usuario2" >                  
+              </div>  
+              <div class="col-11">
+                <p class="nombre  p-3 "> Clara Benitez <span class="ps-2"> 5:26pm, Ayer</span></p>
+                <p class="comentario p-2"> "De primera, la base de apoyo es pareja y no tambalea, el agarre es confortable, la yerba no se enfría rápido, el color negro es mate (sin brillo) la virola no es metálica pero por el momento se mantiene perfecta. Adoro este mate."</p>
+              </div>
+            </div> 
+            <hr>
+            <!-- Comentario 3 -->
+            <div class="row">
+              <div class="col-1"> 
+                <img src="../img/usuario3.jpg" class="img-usuario img-fluid" alt="Usuario3" >                  
+              </div>  
+              <div class="col-11">
+                <p class="nombre  p-3 "> Juan Carrizo <span class="ps-2"> 4:20pm, Hace 2 días </span></p>
+                <p class="comentario p-2"> "Excelente mate, el tamaño es ideal y muy lindo de vista, hasta ahora no tuve ningún problema y eso que lo estuve lavando seguido, muy recomendable!!"</p>
+              </div>
+            </div>
+            <hr>      
+          </div>  
+        </div>
+      </section>
       <!-- Modal Carrito-->
       <section>
         <div class="modal fade col-sm-12" id="carrito" tabindex="-1" aria-labelledby="modalCarrito" aria-hidden="true">
@@ -152,12 +212,12 @@
                   <img src="../img/bombilla1.jpg" alt="bombilla" class="mb-2 me-2 carritoimg">
                   <div class="ms-1 carrito-titulo-producto"> BOMBILLA PICO DE LORO BI COLOR </div>
                   <!-- precio -->
-                  <div class="carrito-precio">$5.000 </div>
+                  <div class="carrito-precio">$3.999 </div>
                   <!-- borrar Carrito -->
                   <i class="btn bi bi-trash-fill borrar-carrito"></i>
                 </div>
                 <hr>     
-                <h5 class="text-end precioTotal"> Total: $14.000 </h5>
+                <h5 class="text-end precioTotal"> Total: $12.999 </h5>
                 <hr>
                 <a class="btn container finalizarCompra" href="../pages/error404.html">  Finalizar Compra</a>
               </div>
@@ -167,9 +227,7 @@
       </section>  
 
     </main>
-    <footer>
-      
-    </footer>
+    <footer></footer> 
 
     <!-- Enlace a Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
